@@ -1,6 +1,6 @@
 # admin vue2.0
 
-跟着B站的大神实战做的项目，现在已经可以登录了，分了权限，比较简陋。刚开始学习。
+跟着B站的大神实战做的项目，现在已经可以登录了，分了权限，比较简陋。刚开始学习。适合初学者vue学习
 
 感谢
 作者: Bruce小鬼
@@ -14,5 +14,14 @@ npm install
 ```
 npm run  serve
 ```
+用户名：admin
+密码：amdin
 
+或者
+用户名：user
+密码:user
 vue2.0项目+js
+![微信图片_20220805144228](https://user-images.githubusercontent.com/26128945/183017911-a472e1d1-99bd-4fd3-99ea-8c4c87c7e3cf.png)
+
+![微信图片_20220805144255](https://user-images.githubusercontent.com/26128945/183017876-e0b81271-eee4-4940-aeb2-737518aa2125.png)
+![微信图片_20220805144308](https://user-images.githubusercontent.com/26128945/183017895-3ee269b8-8354-4faa-83fd-f55576f80111.png)
