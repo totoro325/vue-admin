@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="936" viewBox="0 0 1920 936">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_5" data-name="矩形 5" width="1920" height="936" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="蒙版组_1" data-name="蒙版组 1" clip-path="url(#clip-path)">
+    <rect id="矩形_2" data-name="矩形 2" width="1178" height="936" fill="#f5f9fc" opacity="0.7"/>
+    <rect id="矩形_3" data-name="矩形 3" width="1920" height="383" fill="#3e67c7"/>
+    <text id="研发部门_后台管理系统_" data-name="研发部门
+后台管理系统
+" transform="translate(198 186)" fill="#fff" font-size="40" font-family="DOUYU Font"><tspan x="0" y="0">研发部门</tspan><tspan x="0" y="64">后台管理系统</tspan><tspan x="0" y="128"></tspan></text>
+    <g id="椭圆_1" data-name="椭圆 1" transform="translate(-10 -1196)" fill="none" stroke="#c4c4c4" stroke-width="1">
+      <circle cx="1066.5" cy="1066.5" r="1066.5" stroke="none"/>
+      <circle cx="1066.5" cy="1066.5" r="1066" fill="none"/>
+    </g>
+    <g id="椭圆_2" data-name="椭圆 2" transform="translate(0 -1104)" fill="none" stroke="#c4c4c4" stroke-width="1">
+      <circle cx="1066.5" cy="1066.5" r="1066.5" stroke="none"/>
+      <circle cx="1066.5" cy="1066.5" r="1066" fill="none"/>
+    </g>
+    <g id="椭圆_3" data-name="椭圆 3" transform="translate(0 -1039)" fill="none" stroke="#c4c4c4" stroke-width="1">
+      <circle cx="1066.5" cy="1066.5" r="1066.5" stroke="none"/>
+      <circle cx="1066.5" cy="1066.5" r="1066" fill="none"/>
+    </g>
+    <g id="矩形_4" data-name="矩形 4" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="1920" height="936" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1919" height="935" fill="none"/>
+    </g>
+  </g>
+</svg>
