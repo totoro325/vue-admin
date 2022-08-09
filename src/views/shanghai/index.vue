@@ -235,7 +235,6 @@ export default {
     handleEdit(index, row) {
       this.dialogFormVisible = true;
       this.form = Object.assign({}, row);
-      console.log("*****",this.form)
       _index = index;
       console.log(index)
       console.log(_index)
@@ -248,10 +247,6 @@ export default {
       this.tableData[editData].name = this.form.name;
       this.tableData[editData].address = this.form.address;
       this.dialogFormVisible = false;
-      console.log(this.tableData[editData].id)
-      console.log(this.tableData[editData].name)
-      console.log(this.tableData[editData].address)
-      
     },
     //查询方法
     searchFn:function(e){
@@ -259,30 +254,11 @@ export default {
       //查询公司id
       if(key){
         var searchArray = [];
-        this.newsList.forEach(function(item){
-          if(item.id.indexOf(key)>-1){
-            searchArray.push(item)
-          }
-      //查询姓名
-      if(item.name.indexOf(key)>-1){
-        searchArray.puch(item);
+        this.newsList.forEach(function(item)){
+          
+        }
       }
-      //地址查询
-      if(item.address.indexOf(key)>-1){
-        searchArray.push(item);
-      }
-
-        });
-        this.getShowData(searchArray);
-      }else{
-        this.getShowData(this.newsList)
-      }
-    },
-    //获取页面得内容
-    getShowData:function(arr){
-      this.clonenewsList = JSON.parse(JSON.stringify(arr));
-    },
-    
+    }
     currOperatorChange(val) {
       console.log("选项变化", val);
       if (val) {
@@ -298,7 +274,8 @@ export default {
       }
     },
   },
-   mounted() {  
+   mounted() {
+  
     getData().then((res) => {
       const { code, data } = res.data;
       if (code === 20000) {

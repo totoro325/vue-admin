@@ -13,22 +13,3 @@ export const getData = ()=>{
         url:'/home/getData'
     })
 }
-
-export const getUser = ()=>{
-    return axios.request({
-        url:'/user/getUserList'
-    })
-}
-
-export const edit = ()=>{
-    return axios.request({
-        url:'/user/updateUser'
-    })
-}
-export const deleteUser = ()=>{
-    return axios.request({
-        url:'/user/deleteUser'
-    })
-}
-
-

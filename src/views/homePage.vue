@@ -1,21 +1,15 @@
 <template>
   <div>
-    <el-container style="">
+    <el-container>
       <el-header style="padding: 0!important;"> 
         <common-header></common-header>  
       </el-header>
-     
       <el-container>
         <el-aside width="auto">
-        
           <common-aside></common-aside>
-          
-
         </el-aside>
 
-       
         <el-main>
-           <common-tab></common-tab>
           <router-view></router-view>
         </el-main>
       </el-container>
@@ -26,7 +20,6 @@
 
 import commonAside from "@/components/commonAside";
 import commonHeader from "@/components/commonHeader";
-import commonTab from '@/components/commonTab';
 
 
 export default {
@@ -34,11 +27,9 @@ export default {
   components: {
     commonAside,
     commonHeader,
-    commonTab,
   }
 };
 </script>
-    CommonTab
 
 <style>
 
@@ -56,5 +47,4 @@ html {
   padding: 0 !important;
   margin: 0;
 }
-
 </style>
