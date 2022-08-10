@@ -31,6 +31,20 @@
                 placeholder="请输入密码"
               ></el-input>
             </el-form-item>
+             <el-form-item label="验证码"  label-width="80px" prop="verifyCode" >
+                  <el-row :span="24">
+                    <el-col :span="12">
+                      <el-input
+                        placeholder="请输入4位验证码"
+                        v-model="form.verifyCode"
+                        @keyup.enter.native="submitForm('form')"
+                        
+                      ></el-input>
+                          </el-col>
+                             <el-col :span="10"> <div id="v_container"></div></el-col>
+                  </el-row>
+              </el-form-item>
+
             <el-form-item>
               <el-button type="primary" @click="login">登录</el-button>
             </el-form-item>
@@ -40,7 +54,7 @@
 </template>
 
 <script>
-
+import { GVerify } from '@/verifyCode';
 import { getMenu } from '@/api/data'
 export default {
   name: "login",
@@ -49,6 +63,7 @@ export default {
       form: {
         username:'',
         password:'',
+        verifyCode:'',
       },
       rules: {
         username: [
@@ -57,6 +72,11 @@ export default {
         ],
         password: [
           { required: true, message: "please enter pw", trigger: "blur" },
+        ],
+        verifyCode: [
+
+          { required: true, message: "请输入验证码", trigger: "blur" },
+
         ],
       
       },
@@ -79,7 +99,16 @@ export default {
 
   methods: {
     login() {
-     
+        // 获取验证码
+      var verifyCode = this.form.verifyCode;
+      var verifyFlag = this.verifyCode.validate(verifyCode);
+      console.log(verifyFlag);
+      console.log(verifyCode);
+      if (!verifyFlag) {
+        this.$message.error("验证码错误！");
+        return;
+      }
+
       this.$http.post( getMenu ,this.form).then((res) => {
         res = res.data;
         //判断接口返回状态码为20000登录成功
@@ -101,15 +130,17 @@ export default {
 
     },
   },
- 
+  mounted() {
+    this.verifyCode = new GVerify("v_container");
+
+  },
 }
 </script>
 <style scoped>
 .el-form {
   border-radius: 15px;
   background-clip: padding-box;
- 
-  width: 350px;
+  width: 400px;
   padding: 35px;
 }
 .loginbg{
